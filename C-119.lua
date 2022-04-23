@@ -60,20 +60,20 @@ F_104T =  {
 	bank_angle_max 				= 85, -- Max bank angle (for AI)
 
 
-	has_afteburner 				= true, -- AFB yes/no
+	has_afteburner 				= false, -- AFB yes/no
 	has_speedbrake 				= true, -- Speedbrake yes/no
 	nose_gear_pos 				= {  3.3,	-2,	0}, -- nosegear coord
 	main_gear_pos 				= { -1.5,	-2,	2}, -- main gear coords
 	tand_gear_max 				= 0.4,
 	tanker_type 				= 0, -- Tanker type if the plane is airrefuel capable
-	wing_area 					= 40, -- wing area in m2
-	wing_span 					= 14, -- wing spain in m
+	wing_area 					= 134.4, -- wing area in m2
+	wing_span 					= 33.3, -- wing spain in m
 	wing_type 					= 0,
 	thrust_sum_max 				= 8000, -- thrust in kg (44kN)
 	thrust_sum_ab 				= 10000, -- thrust inkg (71kN)
-	length 						= 18, -- full lenght in m
-	height 						= 5, -- height in m
-	flaps_maneuver 				= 0.5, -- Max flaps in take-off and maneuver (0.5 = 1st stage; 1.0 = 2nd stage) (for AI)
+	length 						= 26.37, -- full lenght in m
+	height 						= 8.08, -- height in m
+	flaps_maneuver 				= 0.65, -- Max flaps in take-off and maneuver (0.5 = 1st stage; 1.0 = 2nd stage) (for AI)
 	range 						= 2000, -- Max range in km (for AI)
 	RCS 						= 5, -- Radar Cross Section m2
 	IR_emission_coeff 			= 0.62, -- Normal engine -- IR_emission_coeff = 1 is Su-27 without afterburner. It is reference.
@@ -84,7 +84,7 @@ F_104T =  {
 	brakeshute_name 			= 3, -- Landing - brake chute visual shape after separation
 	is_tanker 					= false, -- Tanker yes/no
 	air_refuel_receptacle_pos 	= {0, 0, 0}, -- refuel coords
-	engines_count				= 1, -- Engines count
+	engines_count				= 2, -- Engines count
 	engines_nozzles = {
 		[1] = 
 		{
@@ -94,6 +94,14 @@ F_104T =  {
 			exhaust_length_ab   = 7, -- lenght in m
 			exhaust_length_ab_K = 0.76, -- AB animation
 		}, -- end of [1]
+		[2] = 
+		{
+			pos 		=  {-8,	0,	0}, -- nozzle coords
+			elevation   =  0, -- AFB cone elevation
+			diameter	 = 1, -- AFB cone diameter
+			exhaust_length_ab   = 7, -- lenght in m
+			exhaust_length_ab_K = 0.76, -- AB animation
+		}, -- end of [2]
 	}, -- end of engines_nozzles
 	crew_size	 = 1,
 	crew_members = 
