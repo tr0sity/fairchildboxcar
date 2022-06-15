@@ -5,7 +5,7 @@ mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_texture_path  (current_mod_path.."/Textures/Avionics")
 
 
-F_104T =  {
+C119 =  {
         
 	Name 				=   'C-119',
 	DisplayName			= _('C-119'),
@@ -39,10 +39,10 @@ F_104T =  {
 	attribute  			= {wsType_Air, wsType_Airplane, wsType_Fighter, WSTYPE_PLACEHOLDER ,"Battleplanes",},
 	Categories 			= {"{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}", "Interceptor",},	
 	-------------------------
-	M_empty 					= 8000, -- kg
-	M_nominal 					= 10000, -- kg
-	M_max 						= 12000, -- kg
-	M_fuel_max 					= 4000, -- kg --2225
+	M_empty 					= 18000, -- kg
+	M_nominal 					= 29030, -- kg
+	M_max 						= 33566, -- kg
+	M_fuel_max 					= 11000, -- kg --2225
 	H_max 					 	= 21000, -- m
 	average_fuel_consumption 	= 0.5, -- this is highly relative, but good estimates are 36-40l/min = 28-31kg/min = 0.47-0.52kg/s -- 45l/min = 35kg/min = 0.583kg/s
 	CAS_min 					= 50, -- if this is not OVERAL FLIGHT TIME, but jus LOITER TIME, than it sholud be 10-15 minutes.....CAS capability in minute (for AI)
@@ -62,8 +62,8 @@ F_104T =  {
 
 	has_afteburner 				= false, -- AFB yes/no
 	has_speedbrake 				= true, -- Speedbrake yes/no
-	nose_gear_pos 				= {  3.3,	-2,	0}, -- nosegear coord
-	main_gear_pos 				= { -1.5,	-2,	2}, -- main gear coords
+	nose_gear_pos 				= {  6.638,	-3.072,	0}, -- nosegear coord
+	main_gear_pos 				= { -0.94,	-3.04,	0}, -- main gear coords
 	tand_gear_max 				= 0.4,
 	tanker_type 				= 0, -- Tanker type if the plane is airrefuel capable
 	wing_area 					= 134.4, -- wing area in m2
@@ -103,16 +103,30 @@ F_104T =  {
 			exhaust_length_ab_K = 0.76, -- AB animation
 		}, -- end of [2]
 	}, -- end of engines_nozzles
-	crew_size	 = 1,
+	crew_size	 = 3,
 	crew_members = 
 	{
 		[1] = 
 		{
-			ejection_seat_name = "pilot+ejectionseat",
+			ejection_seat_name = "pilot",
 			drop_canopy_name = 12,
 			pos =  {4,	1,	0},
 			canopy_pos = {4,	1,	0},
 		}, -- end of [1]
+		[2] = 
+		{
+			ejection_seat_name = "copilot",
+			drop_canopy_name = 12,
+			pos =  {4,	1,	0},
+			canopy_pos = {4,	1,	0},
+		}, -- end of [2]
+		[3] = 
+		{
+			ejection_seat_name = "rearseat",
+			drop_canopy_name = 12,
+			pos =  {4,	1,	0},
+			canopy_pos = {4,	1,	0},
+		}, -- end of [3]
 	}, -- end of crew_members
 
 	fires_pos = 
@@ -171,18 +185,6 @@ F_104T =  {
 		maxFrequency = 156.000,
 		modulation = MODULATION_AM
 	},
-	
-	
-	Guns = {gun_mount("ADEN", {
-			count = 1000,
-			muzzle_pos_connector = "GUN_POINT",
-			muzzle_pos 		  = {1, -0.5, -1},
-			elevation_initial = 2.000,
-			supply_position   = {1, 0, 0},
-			effect_arg_number = 350,
-			 }
-			)
-			},
 	
 	Pylons =     {
         pylon(1, 0, 0.660000, -0.078000, -3.325000,
@@ -626,7 +628,7 @@ F_104T =  {
 			MaxRUD	=	1, -- Max state of the throttle
 			MaksRUD	=	0.85, -- Military power state of the throttle
 			ForsRUD	=	0.91, -- Afterburner state of the throttle
-			typeng	=	1,
+			typeng	=	3,
 			--[[
 				E_TURBOJET = 0
 				E_TURBOJET_AB = 1
@@ -897,4 +899,4 @@ F_104T =  {
 	},
 }
 
-add_aircraft(F_104T)
+add_aircraft(C_119)
