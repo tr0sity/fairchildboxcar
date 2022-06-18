@@ -1,0 +1,8 @@
+wave = "Effects/Aircrafts/VSN_E2D/PlaneALL"
+inner_radius = 900
+outer_radius = 2300
+cone_inner_angle = 60
+cone_outer_angle = 180
+cone_outer_gain = 0.2
+direction = {-1, 0, 0}
+gain = 7.45

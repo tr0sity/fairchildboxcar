@@ -1,0 +1,6 @@
+model = {
+	lods = {		
+		{"c119v3.edm",100000.000000};
+	};
+	collision_shell = "vsn_e2d-collision.edm";
+}

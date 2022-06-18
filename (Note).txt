@@ -1,0 +1,5 @@
+Note:
+This mod does not come with any models from ED or 3rd party dev. All models are directly loaded from the DCS World Database.
+
+Anmerkung:
+Diese Mods enthalten keine Modelle von ED oder 3rd party dev. Alle Modelle werden direkt aus der DCS World Database geladen.
